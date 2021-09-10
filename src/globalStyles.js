@@ -2,7 +2,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-* {
+  * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -17,8 +17,8 @@ export const Container = styled.div`
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 50px;
   padding-right: 50px;
+  padding-left: 50px;
 
   @media screen and (max-width: 991px) {
     padding-left: 30px;
@@ -30,11 +30,11 @@ export const Container = styled.div`
 export const Button = styled.button`
   border-radius: 4px;
   // If primary colors set, use it
-  background: ${({primary}) => (primary ? '#4B59F7' : '#0467FB')};
+  background: ${({ primary }) => (primary ? '#4B59F7' : '#0467FB')};
   white-space: nowrap;
-  padding: ${({big}) => (big ? '12px 64px' : '10px 20px')};
+  padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
   color: #fff;
-  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   border: none;
   cursor: pointer;
@@ -42,7 +42,7 @@ export const Button = styled.button`
   &:hover {
     transition: all 0.3s ease-out;
     background: #fff;
-    background: ${({primary}) => (primary ? '#0467FB' : '#4B59F7')};
+    background: ${({ primary }) => (primary ? '#0467FB' : '#4B59F7')};
   }
 
   @media screen and (max-width: 960px) {
