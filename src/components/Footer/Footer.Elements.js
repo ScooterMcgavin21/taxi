@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { FaNetworkWired } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 /** FooterContainer component rendering <div> tag */
 export const FooterContainer = styled.div`
@@ -10,7 +11,6 @@ export const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
 /** FooterSubscription component rendering <section> tag */
 export const FooterSubscription = styled.section`
   display: flex;
@@ -22,20 +22,18 @@ export const FooterSubscription = styled.section`
   padding: 24px;
   color: #fff;
 `;
-
 /** FooterSubHeading component rendering <p> tag */
 export const FooterSubHeading = styled.p`
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   margin-bottom: 24px;
   font-size: 24px;
 `;
-
 /** FooterSubText component rendering <p> tag */
 export const FooterSubText = styled.p`
   margin-bottom: 24px;
   font-size: 20px;
 `;
-
 /** Form component rendering <form> tag */
 export const Form = styled.form`
   display: flex;
@@ -47,8 +45,7 @@ export const Form = styled.form`
     width: 80%;
   }
 `;
-
-/** FormInput component rendering input tag */
+/** FormInput component rendering <input> tag */
 export const FormInput = styled.input`
   padding: 10px 20px;
   border-radius: 2px;
@@ -67,7 +64,6 @@ export const FormInput = styled.input`
     margin: 0 0 16px 0;
   }
 `;
-
 /** FooterLinksContainer component rendering <div> tag */
 export const FooterLinksContainer = styled.div`
   width: 100%;
@@ -79,7 +75,6 @@ export const FooterLinksContainer = styled.div`
     padding-top: 32px;
   }
 `;
-
 /** FooterLinksWrapper component rendering <div> tag */
 export const FooterLinksWrapper = styled.div`
   display: flex;
@@ -88,9 +83,8 @@ export const FooterLinksWrapper = styled.div`
     flex-direction: column;
   }
 `;
-
-/** FooterLinksItems component rendering <div> tag */
-export const FooterLinksItems = styled.div`
+/** FooterLinkItems component rendering <div> tag */
+export const FooterLinkItems = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -106,13 +100,11 @@ export const FooterLinksItems = styled.div`
     width: 100%;
   }
 `;
-
 /** FooterLinkTitle component rendering <h2> tag */
 export const FooterLinkTitle = styled.h2`
   margin-bottom: 16px;
 `;
-
-/** FooterLink component rendering Link tag */
+/** FooterLink component rendering <Link> tag */
 export const FooterLink = styled(Link)`
   color: #fff;
   text-decoration: none;
@@ -122,4 +114,54 @@ export const FooterLink = styled(Link)`
     color: #0467fb;
     transition: 0.3s ease-out;
   }
+`;
+/** SocialMedia component rendering <section> tag */
+export const SocialMedia = styled.section`
+  max-width: 1000px;
+  width: 100%;
+`;
+/** SocialMediaWrap component rendering <div> tag */
+export const SocialMediaWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
+`;
+/** SocialLogo component rendering <Link> tag */
+export const SocialLogo = styled(Link)`
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+`;
+/** SocialIcon component rendering <React Icon> tag */
+export const SocialIcon = styled(FaNetworkWired)`
+  margin-right: 10px;
+`;
+/** WebsiteRights component rendering <small> tag */
+export const WebsiteRights = styled.small`
+  color: #fff;
+  margin-bottom: 16px;
+`;
+/** SocialIcons component rendering <div> tag */
+export const SocialIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+`;
+/** SocialIconLink component rendering <a> tag */
+export const SocialIconLink = styled.a`
+  color: #fff;
+  font-size: 24px;
 `;
